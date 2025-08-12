@@ -1,13 +1,13 @@
-package uz.kruz.restaurantreview.controller;
+package com.example.restaurantreview.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import uz.kruz.restaurantreview.domain.CuisineType;
-import uz.kruz.restaurantreview.dto.RestaurantDto;
-import uz.kruz.restaurantreview.service.RestaurantService;
+import com.example.restaurantreview.domain.CuisineType;
+import com.example.restaurantreview.dto.RestaurantDto;
+import com.example.restaurantreview.service.RestaurantService;
 
 import java.util.List;
 
