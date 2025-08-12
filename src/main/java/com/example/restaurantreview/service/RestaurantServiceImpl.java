@@ -1,11 +1,11 @@
-package uz.kruz.restaurantreview.service;
+package com.example.restaurantreview.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import uz.kruz.restaurantreview.domain.CuisineType;
-import uz.kruz.restaurantreview.domain.Restaurant;
-import uz.kruz.restaurantreview.dto.RestaurantDto;
-import uz.kruz.restaurantreview.repository.RestaurantRepository;
+import com.example.restaurantreview.domain.CuisineType;
+import com.example.restaurantreview.domain.Restaurant;
+import com.example.restaurantreview.dto.RestaurantDto;
+import com.example.restaurantreview.repository.RestaurantRepository;
 
 import java.util.List;
 

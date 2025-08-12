@@ -1,7 +1,7 @@
 package com.example.restaurantreview.dto;
 
 import lombok.Builder;
-import uz.kruz.restaurantreview.domain.CuisineType;
+import com.example.restaurantreview.domain.CuisineType;
 
 @Builder
 public class RestaurantDto {
