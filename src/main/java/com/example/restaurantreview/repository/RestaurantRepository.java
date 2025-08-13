@@ -1,10 +1,10 @@
-package uz.kruz.restaurantreview.repository;
+package com.example.restaurantreview.repository;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.jdbc.core.simple.JdbcClient;
 import org.springframework.stereotype.Repository;
-import uz.kruz.restaurantreview.domain.CuisineType;
-import uz.kruz.restaurantreview.domain.Restaurant;
+import com.example.restaurantreview.domain.CuisineType;
+import com.example.restaurantreview.domain.Restaurant;
 
 import java.util.List;
 
