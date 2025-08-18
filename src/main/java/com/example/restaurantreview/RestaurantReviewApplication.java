@@ -1,4 +1,4 @@
-package uz.kruz.restaurantreview;
+package com.example.restaurantreview;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class RestaurantReviewApplication {
 
     public static void main(String[] args) {
+
         SpringApplication.run(RestaurantReviewApplication.class, args);
     }
-
 }

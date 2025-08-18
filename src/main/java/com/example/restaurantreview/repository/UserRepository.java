@@ -7,6 +7,7 @@ import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.simple.JdbcClient;
 import org.springframework.stereotype.Repository;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Repository
@@ -22,14 +23,23 @@ public class UserRepository {
                 .update();
     }
 
-    public void updateUser(UserDto userDto) {
+    public void updateUser(Long id, UserDto userDto) {
         jdbcClient.sql("UPDATE user SET name = :name, email = :email WHERE id = :id")
                 .param("name", userDto.getName())
                 .param("email", userDto.getEmail())
-                .param("id", userDto.getId())
+                .param("id", id)
                 .update();
     }
 
+    public void deleteUser(Long id) {
+        jdbcClient.sql("DELETE FROM user WHERE id = :id")
+                .param("id", id)
+                .update();
+    }
 
-
+    public List<UserDto> getAllUsers() {
+        return jdbcClient.sql("Select * from user")
+                .query(UserDto.class)
+                .list();
+    }
 }

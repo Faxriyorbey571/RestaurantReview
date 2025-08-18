@@ -1,5 +1,6 @@
-package com.example.restaurantreview.service;
+package com.example.restaurantreview.service.impl;
 
+import com.example.restaurantreview.service.RestaurantService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import com.example.restaurantreview.domain.CuisineType;
