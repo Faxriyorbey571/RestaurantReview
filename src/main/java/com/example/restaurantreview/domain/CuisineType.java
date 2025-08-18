@@ -1,5 +1,8 @@
 package com.example.restaurantreview.domain;
 
+import lombok.Getter;
+
+@Getter
 public enum CuisineType {
     ITALIAN("Italian"),
     FRENCH("French"),
@@ -23,7 +26,4 @@ public enum CuisineType {
         this.displayName = displayName;
     }
 
-    public String getDisplayName() {
-        return displayName;
-    }
 }
