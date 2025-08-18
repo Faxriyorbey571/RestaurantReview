@@ -23,8 +23,8 @@ public class RestaurantServiceImpl implements RestaurantService {
                 .name(restaurant.getName())
                 .cuisineType(restaurant.getCuisineType())
                 .phoneNumber(restaurant.getPhoneNumber())
-                .ownerId(restaurant.getOwnerId())
-                .addressId(restaurant.getAddressId())
+                .ownerId(restaurant.getOwner().getId())
+                .addressId(restaurant.getAddress().getId())
                 .rating(restaurant.getRating())
                 .build()).toList();
     }
